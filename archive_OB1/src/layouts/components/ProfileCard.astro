@@ -1,0 +1,8 @@
+---
+const { name, subtitle, image } = Astro.props;
+---
+<div class="bg-gray-800 rounded-lg p-6 shadow text-center max-w-sm mx-auto">
+  <img src={image} alt={name} class="rounded-full w-24 h-24 mx-auto mb-4"/>
+  <h2 class="text-xl font-bold">{name}</h2>
+  <p class="text-sm text-gray-400">{subtitle}</p>
+</div>

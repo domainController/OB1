@@ -1,0 +1,1 @@
+{"name":"ob1","version":"1.0.0","scripts":{"dev":"astro dev"},"devDependencies":{"@astrojs/tailwind":"^6.0.2","astro":"^5.7.0"}}
