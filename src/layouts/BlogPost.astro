@@ -10,7 +10,6 @@ import { Icon } from "astro-icon/components";
 interface Props {
 	post: CollectionEntry<"post">;
 }
-
 const { post } = Astro.props;
 const { ogImage, title, description, updatedDate, publishDate, seriesId } = post.data;
 
