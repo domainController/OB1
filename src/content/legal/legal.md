@@ -9,7 +9,7 @@ draft: false
 ### Site ownership
 
 This website is published and maintained by **Patrice Kenmoé**, based in Malmö, Sweden.  
-Contact: **cp.kenmoe@gmail.com**
+Contact: **patrice@aftershift.se**
 
 ### Editorial intent
 

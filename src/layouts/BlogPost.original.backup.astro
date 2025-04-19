@@ -25,14 +25,14 @@ const { headings } = await render(post);
   			- Too many absolutely positioned elements can affect performance. 
   		-->	
 		<div class="absolute top-0 left-1/2 -ml-[50vw] w-screen min-h-screen pointer-events-none blur-2xl">
-			<div class="absolute top-[-90%] right-[25%] w-[75%] h-full  from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
-			<div class="absolute top-[-90%] left-[25%] w-[75%] h-full  from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
-			<div class="absolute top-[-85%] right-[25%] w-[55%] h-full  from-purple-300 via-blue-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
-			<div class="absolute top-[-85%] left-[25%] w-[55%] h-full  from-indigo-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
-			<div class="absolute top-[-75%] left-[-25%] w-[65%] h-full  from-blue-300 via-pink-300 to-transparent rounded-full opacity-30 dark:opacity-5"></div>
-			<div class="absolute top-[-75%] right-[-25%] w-[65%] h-full  from-purple-300 via-blue-300 to-transparent rounded-full opacity-30 dark:opacity-5"></div>
-			<div class="absolute top-[-85%] left-[-30%] w-[85%] h-full  from-indigo-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
-			<div class="absolute top-[-85%] right-[-30%] w-[85%] h-full  via-indigo-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
+			<div class="absolute top-[-90%] right-[25%] w-[75%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
+			<div class="absolute top-[-90%] left-[25%] w-[75%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
+			<div class="absolute top-[-85%] right-[25%] w-[55%] h-full bg-gradient-to-b from-purple-300 via-blue-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
+			<div class="absolute top-[-85%] left-[25%] w-[55%] h-full bg-gradient-to-b from-indigo-300 via-orange-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
+			<div class="absolute top-[-75%] left-[-25%] w-[65%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-30 dark:opacity-5"></div>
+			<div class="absolute top-[-75%] right-[-25%] w-[65%] h-full bg-gradient-to-b from-purple-300 via-blue-300 to-transparent rounded-full opacity-30 dark:opacity-5"></div>
+			<div class="absolute top-[-85%] left-[-30%] w-[85%] h-full bg-gradient-to-b from-indigo-300 via-orange-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
+			<div class="absolute top-[-85%] right-[-30%] w-[85%] h-full bg-gradient-to-b from-orange-300 via-indigo-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
 		</div>
 	</div>
  	
@@ -44,7 +44,7 @@ const { headings } = await render(post);
 	-->
 			<!-- Button background -->
 			<!--
-			<div class="fixed top-0 h-20 right-[0%] w-[50%] bg-gradient-to-l via-pink-300 to-transparent  opacity-40 dark:opacity-10">
+			<div class="fixed top-0 h-20 right-[0%] w-[50%] bg-gradient-to-l from-orange-300 via-pink-300 to-transparent  opacity-40 dark:opacity-10">
 			</div>
 			-->
 
@@ -53,7 +53,7 @@ const { headings } = await render(post);
 				aria-expanded="false"
 				aria-haspopup="menu"
 				aria-label="Open main menu"
-				class="hidden md:flex group text-sm relative h-8 w-16 font-medium items-center justify-center px-4 rounded-lg bg-[#1a1a1a] text-[#cddfff] hover:bg-[#1a1a1a]"
+				class="hidden md:flex group text-sm relative h-8 w-16 font-medium items-center justify-center px-4 rounded-lg bg-accent-base/5 text-accent-base hover:bg-accent-base/10"
 				id="toggle-navigation-menu"
 				type="button"
 			>
@@ -72,7 +72,7 @@ const { headings } = await render(post);
 	
 	<div class="mt-6 flex sm:grid-cols-[auto_1fr] md:items-start gap-x-8">
 		<article class="grid flex-grow grid-cols-1 break-words pt-4" data-pagefind-body>
-			<div class="prose prose-citrus max-w-none flex-grow prose-headings:font-semibold prose-headings:text-[#cddfff] prose-headings:before:text-[#d1dbe8] sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none">
+			<div class="prose prose-citrus max-w-none flex-grow prose-headings:font-semibold prose-headings:text-accent-base prose-headings:before:text-accent-two sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none">
 				<slot />
 			</div>
 			<WebMentions />
@@ -90,7 +90,7 @@ const { headings } = await render(post);
 	<div class="left-0 right-12 z-50 ml-auto w-fit md:absolute">
 		<button
 			id="to-top-button"
-			class="fixed bottom-14 flex h-12 w-12 text-light translate-y-28 items-center justify-center rounded-full bg-bgColor text-3xl drop-shadow-xl transition-all duration-300 hover:text-[#d1dbe8] data-[show=true]:translate-y-0 data-[show=true]:opacity-100"
+			class="fixed bottom-14 flex h-12 w-12 text-light translate-y-28 items-center justify-center rounded-full bg-bgColor text-3xl drop-shadow-xl transition-all duration-300 hover:text-accent-two data-[show=true]:translate-y-0 data-[show=true]:opacity-100"
 			aria-label="Back to Top"
 			data-show="false"
 		>	
@@ -114,10 +114,10 @@ const { headings } = await render(post);
 	{seriesId && (
 		<mobile-button
 			id="toggle-panel-mobile"
-			class="size-12 flex items-center justify-center block sm:hidden fixed bottom-4 shadow-[0px_10px_25px_rgba(0,0,0,0.15)] border border-special-lighter right-4 z-50 rounded-lg bg-bgColor text-[#cddfff] hover:text-bg-[#1a1a1a]"
+			class="size-12 flex items-center justify-center block sm:hidden fixed bottom-4 shadow-[0px_10px_25px_rgba(0,0,0,0.15)] border border-special-lighter right-4 z-50 rounded-lg bg-bgColor text-accent-base hover:text-bg-accent-base/90"
 			aria-label="Toggle Series Panel"
 		>
-			<span class="absolute inset-0 rounded-lg flex items-center justify-center bg-special-light hover:text-[#cddfff]/90">
+			<span class="absolute inset-0 rounded-lg flex items-center justify-center bg-special-light hover:text-accent-base/90">
 				<Icon class="size-8" name="solar:notes-bold"/>
 			</span>
 		</mobile-button>
@@ -129,10 +129,10 @@ const { headings } = await render(post);
 	{!!headings.length && (
 		<mobile-button
 			id="toggle-toc-mobile"
-			class="size-12 flex items-center justify-center block sm:hidden fixed bottom-20 shadow-[0px_10px_25px_rgba(0,0,0,0.15)] border border-special-lighter right-4 z-50 rounded-lg bg-bgColor text-[#cddfff] hover:text-[#cddfff]/90"
+			class="size-12 flex items-center justify-center block sm:hidden fixed bottom-20 shadow-[0px_10px_25px_rgba(0,0,0,0.15)] border border-special-lighter right-4 z-50 rounded-lg bg-bgColor text-accent-base hover:text-accent-base/90"
 			aria-label="Toggle TOC Panel"
 		>
-			<span class="absolute inset-0 rounded-lg flex items-center justify-center bg-special-light hover:text-[#cddfff]/90">
+			<span class="absolute inset-0 rounded-lg flex items-center justify-center bg-special-light hover:text-accent-base/90">
 				<Icon class="size-8" name="solar:clipboard-list-bold"/>
 			</span>
 		</mobile-button>
@@ -151,7 +151,7 @@ const { headings } = await render(post);
 				// Create the button
 				const copyButton = document.createElement("button");
 				copyButton.className =
-				"absolute flex items-center justify-center bg-bgColor h-6 font-medium overflow-hidden rounded-md text-light hover:text-[#d1dbe8] font-sans text-sm font-medium top-2 right-2";
+				"absolute flex items-center justify-center bg-bgColor h-6 font-medium overflow-hidden rounded-md text-light hover:text-accent-two font-sans text-sm font-medium top-2 right-2";
 
 				// Create the span element that will hold the button text
 				const buttonText = document.createElement("span");

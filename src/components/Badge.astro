@@ -1,26 +1,31 @@
+
 ---
-const { variant = "default", showHash = true, title } = Astro.props;
-
-// CSS-классы для вариантов стилей
-const badgeClasses = {
-	base: "flex items-baseline pt-[0.075rem] drop-shadow-lg active:drop-shadow-none rounded-lg h-6 px-2 text-sm font-medium transition-colors",
-	variants: {
-		default: "bg-textColor text-bgColor hover:brightness-105",
-		accent: "bg-accent text-bgColor hover:brightness-105",
-		"accent-base": "bg-accent-base text-bgColor hover:brightness-105",
-		"accent-one": "bg-accent-one text-bgColor hover:brightness-105",
-		"accent-two": "bg-accent-two text-bgColor hover:brightness-105",
-		muted: "bg-color-100 text-textColor hover:bg-accent-two hover:text-bgColor drop-shadow-none hover:drop-shadow-lg",
-		outline: "border border-lightest text-textColor drop-shadow-none",
-		inactive: "text-lighter bg-color-100 drop-shadow-none",
-	},
-};
-
-const variantClasses = badgeClasses.variants[variant as keyof typeof badgeClasses.variants]; // Приведение типов
+/** 
+ * Fichier Astro : Badge.astro
+ * Rôle : Affiche une étiquette visuelle (badge) associée à un élément (tag, catégorie, etc.)
+ * Utilisé principalement pour les tags visibles dans les pages de blog, de documentation, etc.
+ * Peut contenir un lien (href), un titre, et accepte différentes variantes CSS.
+ */
+const { href, title, variant = "default", ...attrs } = Astro.props;
 ---
 
-<div class={`${badgeClasses.base} ${variantClasses}`}>
-	{showHash && <span class="h-full">#</span>}
-	{title}
-	<slot />
-</div>
+<span
+  class={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+    ${variant === "default" ? "bg-primary text-primary-foreground" : ""}
+    ${variant === "secondary" ? "bg-secondary text-secondary-foreground" : ""}
+    ${variant === "accent" ? "bg-accent text-accent-foreground" : ""}
+    ${variant === "accent-two" ? "bg-[#7faad1] text-white text-xs" : ""}
+    ${variant === "muted" ? "bg-muted text-muted-foreground" : ""}
+    ${variant === "outline" ? "border border-input" : ""}`}
+  title={title}
+  {...attrs}
+>
+  {href ? <a href={href} class="hover:underline">{Astro.slots.default?.()}</a> : Astro.slots.default?.()}
+</span>
+
+<!-- 
+  Fin du composant Badge.
+  - Si une propriété `href` est fournie, le badge devient un lien.
+  - La variante "accent-two" permet d'utiliser un bleu doux (#7faad1) à la place du jaune.
+  - Ce fichier est conçu pour une personnalisation minimaliste des badges dans tout le site.
+-->

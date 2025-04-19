@@ -35,24 +35,24 @@ import { Icon } from "astro-icon/components";
 				<!-- Logo -->
 				<!--
 				<div class="pt-1.5">
-					<svg class="inline-block size-8 fill-current text-[#d1dbe8] drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.35)]">
+					<svg class="inline-block size-8 fill-current text-accent-base drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.35)]">
 						<use href="/brand.svg#brand"></use>
 					</svg>
 				</div>
 				-->
 				<div title={siteConfig.title}>
-					<svg class="inline-block size-8 fill-current text-[#d1dbe8]drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.35)]">
+					<svg class="inline-block size-8 fill-current text-accent-base dark:text-accent-two drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.35)]">
 						<use href="/brand.svg#citrus"></use>
 					</svg>
 				</div>
 				
-				<strong class="'max-[320px]:hidden' hidden xs:block z-10 mb-0.5 ms-2 text-2xl">
+				<strong class="'max-[320px]:hidden' bg-clip-text text-transparent bg-gradient-to-r from-accent-one to-accent-two hidden xs:block z-10 mb-0.5 ms-2 text-2xl group-hover:text-accent-one">
 					{siteConfig.title}
 				</strong>
 			</a>
 			<nav
 				aria-label="Main menu"
-				class="top-20 text-sm mx-auto ml-4 ml-auto hidden flex-col items-end justify-center gap-x-4 rounded-md bg-bgColor font-medium text-[#d1dbe8] shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:flex-row sm:items-center sm:rounded-none sm:bg-transparent sm:shadow-none sm:backdrop-blur-none md:flex"
+				class="top-20 text-sm mx-auto ml-4 ml-auto hidden flex-col items-end justify-center gap-x-4 rounded-md bg-bgColor font-medium text-accent-two shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:flex-row sm:items-center sm:rounded-none sm:bg-transparent sm:shadow-none sm:backdrop-blur-none md:flex"
 				id="main-navigation-menu"
 			>	
 				<!--				
@@ -95,7 +95,7 @@ import { Icon } from "astro-icon/components";
 				}
 				
 				<a
-					class="flex h-8 items-center rounded-lg bg-[#202f3f] px-4 text-[#d1dbe8] underline-offset-2 hover:bg-[#202f3f]"
+					class="flex h-8 items-center rounded-lg bg-accent-base/5 px-4 text-accent-base underline-offset-2 hover:bg-accent-base/10"
 					data-astro-prefetch
 					href="/posts/citrus-docs/intro/"
 				>
@@ -108,7 +108,7 @@ import { Icon } from "astro-icon/components";
 					aria-expanded="false"
 					aria-haspopup="menu"
 					aria-label="Open main menu"
-					class="hidden md:flex group text-sm relative h-8 w-16 font-medium items-center justify-center px-4 rounded-lg bg-[#202f3f] text-[#d1dbe8] hover:bg-[#202f3f]"
+					class="hidden md:flex group text-sm relative h-8 w-16 font-medium items-center justify-center px-4 rounded-lg bg-accent-base/5 text-accent-base hover:bg-accent-base/10"
 					id="toggle-navigation-menu"
 					type="button"
 				>
@@ -133,7 +133,7 @@ import { Icon } from "astro-icon/components";
 							menuLinks.map((link) => (
 								<a
 									aria-current={Astro.url.pathname === link.path ? "page" : false}
-									class="text-[#d1dbe8] underline-offset-2 hover:underline rounded-lg h-8 gap-x-1 px-2 flex justify-center items-center"
+									class="text-accent-two underline-offset-2 hover:underline rounded-lg h-8 gap-x-1 px-2 flex justify-center items-center"
 									data-astro-prefetch
 									href={link.path}
 								>
@@ -142,7 +142,7 @@ import { Icon } from "astro-icon/components";
 							))
 						}
 						<a
-							class="flex h-8 items-center justify-center rounded-lg bg-[#202f3f] hover:bg-[#202f3f] px-4 text-[#d1dbe8] "
+							class="flex h-8 items-center justify-center rounded-lg bg-accent-base/5 hover:bg-accent-base/10 px-4 text-accent-base"
 							data-astro-prefetch
 							href="/posts/citrus-docs/intro/"
 						>
@@ -164,7 +164,7 @@ import { Icon } from "astro-icon/components";
 				aria-expanded="false"
 				aria-haspopup="menu"
 				aria-label="Open main menu"
-				class="group relative h-8 w-8 rounded-lg bg-color-100 hover:bg-[#202f3f] text-[#d1dbe8] md:invisible md:hidden"
+				class="group relative h-8 w-8 rounded-lg bg-color-100 hover:bg-accent-base/10 text-accent-base md:invisible md:hidden"
 				id="toggle-nav-menu-mobile"
 				type="button"
 			>
@@ -213,7 +213,7 @@ import { Icon } from "astro-icon/components";
 		
 		<nav
 			aria-label="Mobile navigation menu"
-			class="text-lg absolute inset-0 flex flex-col items-center justify-center gap-y-4 text-[#d1dbe8]enter font-medium text-[#d1dbe8]"
+			class="text-lg absolute inset-0 flex flex-col items-center justify-center gap-y-4 text-center font-medium text-accent-two"
 			id="nav-menu-mobile"
 		>
 			<!-- Ссылки меню -->
@@ -230,7 +230,7 @@ import { Icon } from "astro-icon/components";
 				))
 			}
 			<a
-				class="flex h-8 items-center rounded-lg bg-[#202f3f] px-4 text-[#d1dbe8] underline-offset-2 hover:bg-[#202f3f]"
+				class="flex h-8 items-center rounded-lg bg-accent-base/5 px-4 text-accent-base underline-offset-2 hover:bg-accent-base/10"
 				data-astro-prefetch
 				href="/series/citrus-docs"
 			>

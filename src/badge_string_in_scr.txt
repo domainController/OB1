@@ -1,0 +1,38 @@
+./content/note/job-contract-basics.md:- Uniforms, access badges, or equipment provided by the employer
+./content/post/chatMemory/remark-rehype.md:[build-badge]: https://github.com/remarkjs/remark-rehype/workflows/main/badge.svg
+./content/post/chatMemory/remark-rehype.md:[coverage-badge]: https://img.shields.io/codecov/c/github/remarkjs/remark-rehype.svg
+./content/post/chatMemory/remark-rehype.md:[downloads-badge]: https://img.shields.io/npm/dm/remark-rehype.svg
+./content/post/chatMemory/remark-rehype.md:[size-badge]: https://img.shields.io/bundlejs/size/remark-rehype
+./content/post/chatMemory/remark-rehype.md:[sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
+./content/post/chatMemory/remark-rehype.md:[backers-badge]: https://opencollective.com/unified/backers/badge.svg
+./content/post/chatMemory/remark-rehype.md:[chat-badge]: https://img.shields.io/badge/chat-discussions-success.svg
+./components/Badge.astro:const badgeClasses = {
+./components/Badge.astro:const variantClasses = badgeClasses.variants[variant as keyof typeof badgeClasses.variants]; // Приведение типов
+./components/Badge.astro:<div class={`${badgeClasses.base} ${variantClasses}`}>
+Binary file ./assets/fonts/SF-Pro-Rounded-Light.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Heavy.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Black.latin.extend.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Regular.latin.extend.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Ultralight.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Thin.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Heavy.latin.extend.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Black.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Semibold.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Regular.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Ultralight.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Heavy.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Bold.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Thin.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Medium.ttf matches
+Binary file ./assets/fonts/source/SF-Pro-Rounded-Light.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Thin.latin.extend.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Medium.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Bold.latin.extend.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Ultralight.latin.extend.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Bold.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Medium.latin.extend.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Black.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Light.latin.extend.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Semibold.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Regular.latin.base.ttf matches
+Binary file ./assets/fonts/SF-Pro-Rounded-Semibold.latin.extend.ttf matches

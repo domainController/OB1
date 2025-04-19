@@ -11,6 +11,10 @@ export const menuLinks: { path: string; title: string }[] = [
     title: "Manifesto",
   },
   {
+    path: "/author/",
+    title: "Author",
+  },
+  {
     path: "/posts/",
     title: "Blog",
   },
@@ -21,6 +25,10 @@ export const menuLinks: { path: string; title: string }[] = [
   {
     path: "/legal/",
     title: "Legal",
+  },
+  {
+    path: "https://ob1.se",
+    title: "Forum",
   },
 ];
 /**

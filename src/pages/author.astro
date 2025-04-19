@@ -1,0 +1,37 @@
+---
+/**
+ * Personal Author Page — AfterShift
+ * This is a minimal bio page using the same layout as Manifesto,
+ * with a centered block, dark-mode friendly, and a styled contact link.
+ */
+ import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+  title: "Author",
+  description: "Learn more about the person behind AfterShift.",
+  ogImage: "/og-images/author.png",
+  articleDate: "",
+}
+---
+
+<PageLayout meta={meta}>
+    <div class="prose prose-citrus max-w-none">
+    <h1 class="text-4xl font-semibold mb-6">Bio</h1>
+
+    <p class="mb-4">
+      I'm Patrice Kenmoé, the creator and maintainer of AfterShift. I document labor conflicts in Sweden, with a focus on the restaurant and hospitality industry.
+    </p>
+
+    <p class="mb-4">
+      Based in Malmö, I investigate the legal blind spots that precarious workers face — from missing contracts to denied wages — and explore strategic and legal responses to employer misconduct.
+    </p>
+
+    <p class="mb-4">
+      My work is based on real cases, legal texts, and procedural analysis. AfterShift is both a personal archive and a tactical publishing project.
+    </p>
+
+    <p class="mt-6 font-medium">
+      Contact: <a href="mailto:patrice@aftershift.se">patrice@aftershift.se</a>.</p>
+    </p>
+    </div>
+</PageLayout>

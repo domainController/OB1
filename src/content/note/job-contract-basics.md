@@ -7,13 +7,13 @@ tags: ["contract", "sweden", "oral", "employment-law", "documentation"]
 draft: false
 ---
 
-## What is an employment contract in Sweden?
+### What is an employment contract in Sweden?
 
 In Sweden, a job contract **does not need to be written to be valid**. It can be **oral, tacit, or written**, as long as a few key conditions are met.
 
 According to Swedish labour law (Arbetsrätt), a contract exists when a person works **in exchange for compensation**, under the **authority and direction** of an employer. This hierarchical relationship is key to establishing an employment situation.
 
-## How can a contract be proven without a written document?
+### How can a contract be proven without a written document?
 
 Even without a signed contract, the following elements may serve as **evidence**:
 
@@ -24,7 +24,7 @@ Even without a signed contract, the following elements may serve as **evidence**
 
 These can help demonstrate an **implicit employment agreement**, even in court.
 
-## Why a written contract still matters
+### Why a written contract still matters
 
 Although not mandatory, having a written contract provides **critical protection**, especially in case of conflict:
 
@@ -46,7 +46,7 @@ The Swedish Employment Protection Act (LAS) states a contract should contain:
 
 The employer is legally required to **provide these in writing within 7 days** from the first day of work — even if no signed paper is issued.
 
-## In case of dispute or missing contract
+### In case of dispute or missing contract
 
 Employees can:
 
