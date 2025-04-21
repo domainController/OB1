@@ -1,9 +1,13 @@
 ---
 title: "On Defamation and Public Accusations"
 description: "Why naming companies like QUAN is a form of transparency, not defamation."
-publishDate: "2025-04-18T08:00:00Z"
+publishDate: "20 December 2024"
 tags: ["legal", "freedom of speech", "accountability"]
 draft: false
+seriesId: citrus-docs
+orderInSeries: 5
+featured: true
+ogImage: ""
 ---
 
 ### Context

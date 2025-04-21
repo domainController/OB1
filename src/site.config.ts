@@ -23,7 +23,7 @@ export const menuLinks: { path: string; title: string }[] = [
     title: "Notes",
   },
   {
-    path: "/legal/",
+    path: "/legal /",
     title: "Legal",
   },
   {
@@ -58,7 +58,7 @@ export const menuLinks: { path: string; title: string }[] = [
  */
 
 export const siteConfig: SiteConfig = {
-  // Used to construct the meta title property found in src/components/BaseHead.astro L:11, and webmanifest name found in astro.config.ts L:42
+  // Used to construct the meta title property found in src/components/BaseHead.astro L:11, and webmanifest description
   title: "AfterShift",
   // Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
   date: {
@@ -69,12 +69,34 @@ export const siteConfig: SiteConfig = {
       year: "numeric",
     },
   },
+
   // Used as the default description meta property and webmanifest description
   description: "An opinionated starter theme for Astro",
   // HTML lang property, found in src/layouts/Base.astro L:18 & astro.config.ts L:48
   lang: "en-GB",
   // Meta property, found in src/components/BaseHead.astro L:42
   ogLocale: "en_GB",
-  // Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
+  // Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/blog/[slug].astro L:25)
   author: "Patrice Kenmoé",
+
+  // Optional GitHub configuration used in footer and blog post layout.
+  github: {
+    username: "domainController",
+    repository: "aftershift",
+  },
+
+  // Giscus comments configuration
+  giscus: {
+    repo: "domainController/aftershift",
+    repoId: "R_kgDOOYmS0g",
+    category: "Comments",
+    categoryId: "DIC_kwDOOYmS0s4CpUSr",
+    mapping: "pathname",
+    reactionsEnabled: "1",
+    emitMetadata: "0",
+    inputPosition: "bottom",
+    theme: "preferred_color_scheme",
+    lang: "en",
+    loading: "lazy",
+  },
 };

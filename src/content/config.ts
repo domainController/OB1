@@ -1,5 +1,37 @@
 import { defineCollection, z } from "astro:content";
 
+// 📚 Glossary entries
+const glossary = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    publishDate: z.date(),
+    description: z.string().optional(),
+  }),
+});
+
+// ⚖️ Legal notes and jurisprudence
+const legalNotes = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    publishDate: z.date(),
+    legalReference: z.string().optional(),
+    description: z.string().optional(),
+  }),
+});
+
+// 🧩 Tools, apps, technical modules
+const apps = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    publishDate: z.date(),
+    description: z.string().optional(),
+    version: z.string().optional(),
+  }),
+});
+
 const post = defineCollection({
   schema: z.object({
     title: z.string(),
@@ -18,6 +50,9 @@ const note = defineCollection({
 });
 
 export const collections = {
+  glossary,
+  "legal-notes": legalNotes,
+  apps,
   post,
   note,
 };

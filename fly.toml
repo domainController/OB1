@@ -1,0 +1,9 @@
+app = "commento-aftershift"
+primary_region = "arn"
+
+[build]
+  image = "aftershift/commento:1.8.0"
+
+[env]
+  COMMENTO_ORIGIN = "https://comments.aftershift.se"
+  COMMENTO_PORT = "8080"
