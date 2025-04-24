@@ -1,8 +1,0 @@
-{
-  "name": "aftershift",
-  "type": "static",
-  "description": "Astro static site",
-  "deploy": {
-    "static": "dist"
-  }
-}
