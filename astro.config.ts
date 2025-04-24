@@ -25,7 +25,7 @@ import {
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/", // ⚠️ surtout pas de sous-chemin ici
+  base: "/aftershift/", // ⚠️ surtout pas de sous-chemin ici
   outDir: "dist",
   image: {
     domains: ["webmention.io"],
