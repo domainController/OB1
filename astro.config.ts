@@ -25,6 +25,8 @@ import {
 
 // https://astro.build/config
 export default defineConfig({
+  base: "/", // ⚠️ surtout pas de sous-chemin ici
+  outDir: "dist",
   image: {
     domains: ["webmention.io"],
   },
@@ -34,6 +36,7 @@ export default defineConfig({
       applyBaseStyles: false,
       nesting: true,
     }),
+
     sitemap(),
     mdx(),
     robotsTxt(),
@@ -46,8 +49,9 @@ export default defineConfig({
       /**
        * optional
        **/
-      // short_name: "Astro_Citrus",
+      // short_name: "Aftershift",
       description: siteConfig.description,
+
       lang: siteConfig.lang,
       icon: "public/icon.svg", // the source for generating favicon & icons
       icons: [
@@ -115,7 +119,7 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/prefetch/
   prefetch: true,
   // ! Please remember to replace the following site property with your own domain
-  site: "http://astrocitrus.artemkutsan.pp.ua/",
+  site: "http://aftershift.se/",
   vite: {
     build: {
       sourcemap: true, // Source maps generation

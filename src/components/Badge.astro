@@ -1,31 +1,22 @@
-
 ---
-/** 
- * Fichier Astro : Badge.astro
- * Rôle : Affiche une étiquette visuelle (badge) associée à un élément (tag, catégorie, etc.)
- * Utilisé principalement pour les tags visibles dans les pages de blog, de documentation, etc.
- * Peut contenir un lien (href), un titre, et accepte différentes variantes CSS.
- */
-const { href, title, variant = "default", ...attrs } = Astro.props;
+interface Props {
+  type?: "default" | "info" | "success" | "warning" | "danger";
+  label: string;
+}
+
+const { type = "default", label } = Astro.props;
+
+const classes = {
+  default: "text-gray-800 bg-gray-100",
+  info: "text-blue-800 bg-blue-100",
+  success: "text-green-800 bg-green-100",
+  warning: "text-yellow-800 bg-yellow-100",
+  danger: "text-red-800 bg-red-100",
+}[type];
 ---
 
 <span
-  class={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
-    ${variant === "default" ? "bg-primary text-primary-foreground" : ""}
-    ${variant === "secondary" ? "bg-secondary text-secondary-foreground" : ""}
-    ${variant === "accent" ? "bg-accent text-accent-foreground" : ""}
-    ${variant === "accent-two" ? "bg-[#7faad1] text-white text-xs" : ""}
-    ${variant === "muted" ? "bg-muted text-muted-foreground" : ""}
-    ${variant === "outline" ? "border border-input" : ""}`}
-  title={title}
-  {...attrs}
+  class={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${classes}`}
 >
-  {href ? <a href={href} class="hover:underline">{Astro.slots.default?.()}</a> : Astro.slots.default?.()}
+  {label}
 </span>
-
-<!-- 
-  Fin du composant Badge.
-  - Si une propriété `href` est fournie, le badge devient un lien.
-  - La variante "accent-two" permet d'utiliser un bleu doux (#7faad1) à la place du jaune.
-  - Ce fichier est conçu pour une personnalisation minimaliste des badges dans tout le site.
--->
